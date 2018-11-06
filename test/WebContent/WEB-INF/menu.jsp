@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <ul>
 	<li>
@@ -13,6 +14,8 @@
 		</a>
 	</li>
 	<li>
-		Page 3
+		<a href="/test/calc">
+			Calculatrice
+		</a>
 	</li>
 </ul>
