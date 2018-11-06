@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.OCWals.beans.Calc;
 
-
 @WebServlet("/Calculatrice")
 public class Calculatrice extends HttpServlet {
 	private static final long serialVersionUID = 1L;

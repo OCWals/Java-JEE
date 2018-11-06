@@ -1,43 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
-	
-	<servlet>
-		<servlet-name>Test</servlet-name>
-		<servlet-class>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+  
+  <servlet>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>
+			com.OCWals.servlets.Connexion
+		</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>
+			/co
+		</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>
 			com.OCWals.servlets.Test
 		</servlet-class>
- 	</servlet>
-	<servlet-mapping>
-    	<servlet-name>Test</servlet-name>
-    	<url-pattern>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>
 			/bonjour
 		</url-pattern>
-	</servlet-mapping>
+  </servlet-mapping>
   
-	<servlet>
-		<servlet-name>Calculatrice</servlet-name>
-		<servlet-class>
+  <servlet>
+    <servlet-name>Calculatrice</servlet-name>
+    <servlet-class>
 	 		com.OCWals.servlets.Calculatrice
 	 	</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Calculatrice</servlet-name>
-		<url-pattern>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Calculatrice</servlet-name>
+    <url-pattern>
 			/calc
 		</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Accueil</servlet-name>
-		<servlet-class>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>
   			com.OCWals.servlets.Accueil
   		</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Accueil</servlet-name>
-		<url-pattern>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>
 			/
 		</url-pattern>
-	</servlet-mapping>
-
+  </servlet-mapping>
 </web-app>

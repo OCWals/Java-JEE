@@ -1,16 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PremiÃ¨re page JSP</title>
+<title>Première page JSP</title>
 </head>
 <body>
 	<%@ include file = "menu.jsp" %>
 	<p>
-		Holaaa ${empty name ? '' : name } !
+		<c:out value="Holaaa ${empty name ? '' : name } !" />
 	</p>
+	
+	<p>
+		<form method="POST" action="bonjour">
+			<label for="name">Nom :</label>
+			<input type="text" id="name" name="name" placeholder="${empty name ? '' : name}">
+			<input type="submit" value="Go !">
+		</form>
+	</p>
+	
 	<p>
 		<%
 			String variable = (String) request.getAttribute("message");
