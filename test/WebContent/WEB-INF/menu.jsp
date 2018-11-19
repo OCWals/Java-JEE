@@ -19,4 +19,9 @@
 			Connexion
 		</a>
 	</li>
+	<li>
+		<a href="/test/session">
+			Session
+		</a>
+	</li>
 </ul>

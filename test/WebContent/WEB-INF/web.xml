@@ -26,11 +26,11 @@
     <servlet-class>
 		com.OCWals.servlets.Test
 	</servlet-class>
-	<multipart-config>
-        <location>C:\Users\736865\Desktop\Work\Java-JEE\test\TEMP</location>
-        <max-file-size>10485760</max-file-size> <!-- 10 Mo -->
-        <max-request-size>52428800</max-request-size> <!-- 5 x 10 Mo -->
-        <file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+    <multipart-config>
+      <location>C:\Users\736865\Desktop\Work\Java-JEE\test\TEMP</location>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+      <file-size-threshold>1048576</file-size-threshold>
     </multipart-config>
   </servlet>
   <servlet-mapping>
@@ -50,6 +50,19 @@
     <servlet-name>Calculatrice</servlet-name>
     <url-pattern>
 		/calc
+	</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Session</servlet-name>
+    <servlet-class>
+  		com.OCWals.servlets.Session
+  	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Session</servlet-name>
+    <url-pattern>
+		/session
 	</url-pattern>
   </servlet-mapping>
   
