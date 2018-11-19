@@ -13,7 +13,7 @@
 			<label for="pseudo">Pseudo : </label>
 			<input type="text" id="pseudo" name="pseudo">
 			<label for="pass">Password : </label>
-			<input type="password" id=pass" name="pass">
+			<input type="password" id="pass" name="pass">
 			<br>
 			<input type="submit" value="Go !">
 		</form>
