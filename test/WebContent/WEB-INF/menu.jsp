@@ -24,4 +24,9 @@
 			Session
 		</a>
 	</li>
+	<li>
+		<a href="/test/cookies">
+			Cookies
+		</a>
+	</li>
 </ul>

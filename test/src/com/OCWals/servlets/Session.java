@@ -29,6 +29,8 @@ public class Session extends HttpServlet {
 		session.setAttribute("pseudo", pseudo);
 		session.setAttribute("prenom", prenom);
 		
+		
+		
 		doGet(request, response);
 	}
 }
