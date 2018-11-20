@@ -24,7 +24,7 @@
 		com.OCWals.servlets.Test
 	</servlet-class>
     <multipart-config>
-      <location>C:\Users\736865\Desktop\Work\Java-JEE\test\TEMP</location>
+      <location>C:\Users\736865\Desktop\Work\Java-JEE\test\FILES\TEMP</location>
       <max-file-size>10485760</max-file-size>
       <max-request-size>52428800</max-request-size>
       <file-size-threshold>1048576</file-size-threshold>
