@@ -48,7 +48,6 @@
 		/calc
 	</url-pattern>
   </servlet-mapping>
-    
   <servlet>
     <servlet-name>Session</servlet-name>
     <servlet-class>
@@ -61,7 +60,6 @@
 		/session
 	</url-pattern>
   </servlet-mapping>
-    
   <servlet>
     <servlet-name>Cookies</servlet-name>
     <servlet-class>
@@ -74,8 +72,18 @@
 		/cookies
 	</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <servlet-name>DAOTest</servlet-name>
+    <servlet-class>
+  		com.OCWals.servlets.DAOTest
+  	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DAOTest</servlet-name>
+    <url-pattern>
+		/dao
+	</url-pattern>
+  </servlet-mapping>
   <servlet>
     <servlet-name>Accueil</servlet-name>
     <servlet-class>

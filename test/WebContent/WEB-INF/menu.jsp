@@ -29,4 +29,9 @@
 			Cookies
 		</a>
 	</li>
+	<li>
+		<a href="/test/dao">
+			DAO
+		</a>
+	</li>
 </ul>

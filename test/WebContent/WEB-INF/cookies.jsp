@@ -8,10 +8,10 @@
 	</head>
 	<body>
 		<%@ include file = "menu.jsp" %>
-		<p>
+		<h3>
 			WELCOME ON COOKIES PAGE,
 			<c:out value="${prenom}" /> !
-		</p>
+		</h3>
 		<form method="post" action="cookies">
 			<p>
 				<label for="pseudo">Pseudo :</label>

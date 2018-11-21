@@ -21,7 +21,7 @@ public class Noms {
 		loadDatabase();
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			System.out.println("ERROR - Classe introuvable.");
 		}
@@ -66,7 +66,7 @@ public class Noms {
 	
 	private void loadDatabase() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 		}
 		
