@@ -3,7 +3,7 @@ package com.OCWals.beans;
 public class Utilisateur {
 	private String nom;
 	private String prenom;
-	private int age;
+	private int age = 0;
 	
 	
 	public String getNom() {
